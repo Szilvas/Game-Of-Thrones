@@ -12,7 +12,7 @@
 .mainLeft-container {
 
     width: 80vw;
-  height:100%;
+    height: 100%;
 
     background-image: url(/assets/site/mapblue.jpg);
 
@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
 
-    
+
 
 
 }
@@ -28,12 +28,12 @@
 
 .mainRight-container {
     width: 20vw;
-    
+
     background-image: url(/assets/site/wood.jpg);
     justify-content: space-around;
     flex-direction: column;
     display: flex;
-    
+
     text-align: center;
 
 
@@ -41,7 +41,7 @@
 
 .mainTable {
     display: flex;
- 
+
 
 
 }
@@ -51,31 +51,29 @@
 
 
 .personsPhoto {
-    
+
     justify-content: space-around;
     margin: 10px;
     border-radius: 50%;
-    
-    
-    
+    cursor:pointer;
+
+
+
 }
 
 .personsPhoto:hover {
     box-shadow: 0 0 50px black;
-    
+   
+
 }
 
 .persons {
-    
+
     text-align: center;
-    flex: 0 0 12.5% ;
+    flex: 0 0 12.5%;
     margin-bottom: 14px;
-    
-
-
-
-
 }
+
 
 body {
     margin: 0;
@@ -87,10 +85,14 @@ body {
     font-size: 24px;
     padding-top: 10px;
 }
+.personsName:hover {
+    text-shadow: 0 0 20px black;
+    cursor:pointer;
+}
 
 .personsHousePhoto {
-    text-align: right; 
-    
+    text-align: right;
+
 }
 
 .bio {
@@ -116,6 +118,7 @@ body {
     margin-left: 100px;
     border-radius: 5px;
     
+
 }
 
 #button {
@@ -125,12 +128,13 @@ body {
     margin-left: 50px;
     margin-bottom: -55px;
     border-radius: 5px;
-   
-    
+    cursor:pointer;
+
 }
+
 .personsDetailPhoto {
     border: 2px solid cornsilk;
     border-radius: 5px;
     max-width: 350px;
-    
+
 }
