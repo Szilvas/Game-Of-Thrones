@@ -12,7 +12,7 @@
 .mainLeft-container {
 
     width: 80vw;
-    height: 48vw;
+  height:100%;
 
     background-image: url(/assets/site/mapblue.jpg);
 
@@ -69,6 +69,7 @@
     
     text-align: center;
     flex: 0 0 12.5% ;
+    margin-bottom: 14px;
     
 
 
@@ -124,6 +125,7 @@ body {
     margin-left: 50px;
     margin-bottom: -55px;
     border-radius: 5px;
+   
     
 }
 .personsDetailPhoto {
