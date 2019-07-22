@@ -33,7 +33,8 @@
     justify-content: space-around;
     flex-direction: column;
     display: flex;
-    padding-left: 10px;
+    
+    text-align: center;
 
 
 }
@@ -54,6 +55,7 @@
     justify-content: space-around;
     margin: 10px;
     border-radius: 50%;
+    
     
     
 }
@@ -87,6 +89,7 @@ body {
 
 .personsHousePhoto {
     text-align: right; 
+    
 }
 
 .bio {
@@ -120,6 +123,11 @@ body {
     margin: 20px;
     margin-left: 50px;
     margin-bottom: -55px;
+    border-radius: 5px;
+    
+}
+.personsDetailPhoto {
+    border: 2px solid cornsilk;
     border-radius: 5px;
     
 }
