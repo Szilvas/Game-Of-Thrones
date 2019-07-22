@@ -2,7 +2,6 @@ const GotCharacters = {
   data: [],
   init() {
     this.findAll();
-    this.searchInputField();
   },
 
   findAll() {
@@ -39,13 +38,13 @@ const GotCharacters = {
     let gotTemp = '';
     this.data.forEach((item, i) => {
       gotTemp += `<div class="persons">
-                    <img class="personsPhoto" src="/${item.portrait}" alt="${item.name}">
+                    <img class="personsPhoto" src="/${item.portrait}" 
+                        onclick="GotCharacters.showCharacterData(${i})" alt="${item.name}">
                     <div class="personsName" 
                        onclick="GotCharacters.showCharacterData(${i})" >${item.name}</div>
                     </div> `;
       document.querySelector('.mainLeft-container').innerHTML = gotTemp;
     });
-    
   },
 
   showCharacterData(i) {
@@ -63,26 +62,20 @@ const GotCharacters = {
     document.querySelector('.details').innerHTML = characterTemp;
   },
 
-  searchInputField() {
-    const btn = document.getElementById('searchButton');
-    let value = document.querySelector('#search').value;
-    console.log(value);
-    btn.addEventListener('click', GotCharacters.search(value));
-  },
 
-  search(charName) {
-    console.log(charName);
+  search() {
+    const searchBox = document.querySelector('#search');
     let characterIndex = '';
     for (let index = 0; index < this.data.length; index += 1) {
       const element = this.data[index];
-      if (element.name === charName || element.name.toLowerCase() === charName) {
+      if (element.name.toLowerCase() === searchBox.value.toLowerCase()) {
         characterIndex = index;
       }
     }
     if (characterIndex === '') {
       console.log('Character is not found');
     } else {
-      GotCharacters.showCharacterData(characterIndex);
+      this.showCharacterData(parseInt(characterIndex, 10));
     }
   },
 };

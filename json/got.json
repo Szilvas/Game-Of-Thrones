@@ -18,13 +18,7 @@
     "bio": "Arya Stark is the third child and second daughter of Lord Eddard and Lady Catelyn Stark. She is nine at the start of A Game of Thrones.",
     "house": "stark"
   },
-  {
-    "name": "Sansa Stark",
-    "portrait": "assets/sansa.png",
-    "picture": "assets/pictures/sansa_stark.jpg",
-    "bio": "Sansa Stark is the elder daughter of Catelyn and Eddard Stark. She is thirteen years old at the start of the series. ",
-    "house": "stark"
-  },
+  
   {
     "name": "Robb Stark",
     "portrait": "assets/robb.png",
